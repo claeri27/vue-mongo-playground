@@ -1,163 +1,147 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <div class="nav">
-      <b-dropdown>
-        <button class="button is-primary" slot="trigger">
-            <span>Login</span>
-        </button>
+  <v-container>
+    <v-layout
+      text-xs-center
+      wrap
+    >
+      <v-flex xs12>
+        <v-img
+          :src="require('../assets/logo.svg')"
+          class="my-3"
+          contain
+          height="200"
+        ></v-img>
+      </v-flex>
 
-        <b-dropdown-item>Action</b-dropdown-item>
-        <b-dropdown-item>Another action</b-dropdown-item>
-        <b-dropdown-item>Something else</b-dropdown-item>
-      </b-dropdown>
-      <b-dropdown>
-        <button class="button is-primary" slot="trigger">
-            <span>Register</span>
-        </button>
+      <v-flex mb-4>
+        <h1 class="display-2 font-weight-bold mb-3">
+          Welcome to Vuetify
+        </h1>
+        <p class="subheading font-weight-regular">
+          For help and collaboration with other Vuetify developers,
+          <br>please join our online
+          <a href="https://community.vuetifyjs.com" target="_blank">Discord Community</a>
+        </p>
+      </v-flex>
 
-        <b-dropdown-item>Action</b-dropdown-item>
-        <b-dropdown-item>Another action</b-dropdown-item>
-        <b-dropdown-item>Something else</b-dropdown-item>
-      </b-dropdown>
-      <b-dropdown hoverable>
-          <button class="button is-info" slot="trigger">
-              <span>Hover Button w/ drop down list</span>
-              <b-icon icon="menu-down"></b-icon>
-          </button>
+      <v-flex
+        mb-5
+        xs12
+      >
+        <h2 class="headline font-weight-bold mb-3">What's next?</h2>
 
-          <b-dropdown-item>Action</b-dropdown-item>
-          <b-dropdown-item>Another action</b-dropdown-item>
-          <b-dropdown-item>Something else</b-dropdown-item>
-      </b-dropdown>
+        <v-layout justify-center>
+          <a
+            v-for="(next, i) in whatsNext"
+            :key="i"
+            :href="next.href"
+            class="subheading mx-3"
+            target="_blank"
+          >
+            {{ next.text }}
+          </a>
+        </v-layout>
+      </v-flex>
 
-      <b-dropdown disabled>
-          <button class="button" slot="trigger">
-              <span>Disabled</span>
-              <b-icon icon="menu-down"></b-icon>
-          </button>
+      <v-flex
+        xs12
+        mb-5
+      >
+        <h2 class="headline font-weight-bold mb-3">Important Links</h2>
 
-          <b-dropdown-item>Action</b-dropdown-item>
-          <b-dropdown-item>Another action</b-dropdown-item>
-          <b-dropdown-item>Something else</b-dropdown-item>
-      </b-dropdown>
-    </div>
-    <div class="body">
-      <section>
-        <div class="block">
-            <b-icon
-                icon="account"
-                size="is-large"
-                type="is-success">
-            </b-icon>
-            <b-icon
-                icon="home"
-                size="is-large"
-                type="is-info">
-            </b-icon>
-            <b-icon
-                icon="view-dashboard"
-                size="is-large"
-                type="is-primary">
-            </b-icon>
-        </div>
+        <v-layout justify-center>
+          <a
+            v-for="(link, i) in importantLinks"
+            :key="i"
+            :href="link.href"
+            class="subheading mx-3"
+            target="_blank"
+          >
+            {{ link.text }}
+          </a>
+        </v-layout>
+      </v-flex>
 
-        <button class="button is-dark">
-            <b-icon icon="check"></b-icon>
-            <span>Finish</span>
-        </button>
+      <v-flex
+        xs12
+        mb-5
+      >
+        <h2 class="headline font-weight-bold mb-3">Ecosystem</h2>
 
-        <button class="button is-warning">
-            <b-icon icon="check"></b-icon>
-            <span>Finish</span>
-        </button>
-    </section>
-    <section>
-        <b-field grouped group-multiline>
-            <b-field label="Total">
-                <b-input type="number" v-model="total"></b-input>
-            </b-field>
-            <b-field label="Items per page">
-                <b-input type="number" v-model="perPage"></b-input>
-            </b-field>
-            <b-field label="Order">
-                <b-select v-model="order">
-                    <option value="">default</option>
-                    <option value="is-centered">is-centered</option>
-                    <option value="is-right">is-right</option>
-                </b-select>
-            </b-field>
-            <b-field label="Size">
-                <b-select v-model="size">
-                    <option value="">default</option>
-                    <option value="is-small">is-small</option>
-                    <option value="is-medium">is-medium</option>
-                    <option value="is-large">is-large</option>
-                </b-select>
-            </b-field>
-        </b-field>
-        <div class="block">
-            <b-switch v-model="isSimple">Simple</b-switch>
-            <b-switch v-model="isRounded">Rounded</b-switch>
-        </div>
-
-        <hr>
-        <b-pagination
-            :total="total"
-            :current.sync="current"
-            :order="order"
-            :size="size"
-            :simple="isSimple"
-            :rounded="isRounded"
-            :per-page="perPage">
-        </b-pagination>
-    </section>
-    <section>
-        <b-message title="Danger with icon" type="is-danger" has-icon>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id fermentum quam. Proin sagittis, nibh id hendrerit imperdiet, elit sapien laoreet elit
-        </b-message>
-
-        <b-message title="Success with icon" type="is-success" has-icon>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id fermentum quam. Proin sagittis, nibh id hendrerit imperdiet, elit sapien laoreet elit
-        </b-message>
-
-        <b-message title="Info with icon" type="is-info" has-icon>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id fermentum quam. Proin sagittis, nibh id hendrerit imperdiet, elit sapien laoreet elit
-        </b-message>
-
-        <b-message title="Warning with icon" type="is-warning" has-icon>
-            Lorem ipsum dolor sit amet, consectetur warning elit. Fusce id fermentum quam. Proin sagittis, nibh id hendrerit imperdiet, elit sapien laoreet elit
-        </b-message>
-    </section>
-    </div>
-  </div>
+        <v-layout justify-center>
+          <a
+            v-for="(eco, i) in ecosystem"
+            :key="i"
+            :href="eco.href"
+            class="subheading mx-3"
+            target="_blank"
+          >
+            {{ eco.text }}
+          </a>
+        </v-layout>
+      </v-flex>
+    </v-layout>
+  </v-container>
 </template>
 
-<script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator'
-import Buefy from 'buefy'
-import 'buefy/dist/buefy.css'
+<script>
+  export default {
+    data: () => ({
+      ecosystem: [
+        {
+          text: 'vuetify-loader',
+          href: 'https://github.com/vuetifyjs/vuetify-loader'
+        },
+        {
+          text: 'github',
+          href: 'https://github.com/vuetifyjs/vuetify'
+        },
+        {
+          text: 'awesome-vuetify',
+          href: 'https://github.com/vuetifyjs/awesome-vuetify'
+        }
+      ],
+      importantLinks: [
+        {
+          text: 'Documentation',
+          href: 'https://vuetifyjs.com'
+        },
+        {
+          text: 'Chat',
+          href: 'https://community.vuetifyjs.com'
+        },
+        {
+          text: 'Made with Vuetify',
+          href: 'https://madewithvuetifyjs.com'
+        },
+        {
+          text: 'Twitter',
+          href: 'https://twitter.com/vuetifyjs'
+        },
+        {
+          text: 'Articles',
+          href: 'https://medium.com/vuetify'
+        }
+      ],
+      whatsNext: [
+        {
+          text: 'Explore components',
+          href: 'https://vuetifyjs.com/components/api-explorer'
+        },
+        {
+          text: 'Select a layout',
+          href: 'https://vuetifyjs.com/layout/pre-defined'
+        },
+        {
+          text: 'Frequently Asked Questions',
+          href: 'https://vuetifyjs.com/getting-started/frequently-asked-questions'
+        }
 
-Vue.use(Buefy)
-
-@Component
-export default class HelloWorld extends Vue {
-  @Prop() private msg!: string;
-}
+      ]
+    })
+  }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
-.nav {
-  background-color: red;
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-align-items: center;
-  align-items: center;
-  justify-content: center;
-}
+<style>
+
 </style>

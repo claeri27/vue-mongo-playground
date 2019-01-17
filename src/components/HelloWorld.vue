@@ -1,84 +1,35 @@
 <template>
-  <v-container>
-    <v-layout
-      text-xs-center
-      wrap
-    >
+  <v-container grid-list-md text-xs-center>
+    <v-layout row wrap>
       <v-flex xs12>
-        <v-img
-          :src="require('../assets/logo.svg')"
-          class="my-3"
-          contain
-          height="200"
-        ></v-img>
+        <v-card dark color="primary">
+          <v-card-text class="px-0">12</v-card-text>
+        </v-card>
+      </v-flex> 
+      <v-flex v-for="i in 2" :key="`6${i}`" xs6>
+        <v-card dark color="secondary">
+          <v-card-text class="px-0">6</v-card-text>
+        </v-card>
       </v-flex>
-
-      <v-flex mb-4>
-        <h1 class="display-2 font-weight-bold mb-3">
-          Welcome to Vuetify
-        </h1>
-        <p class="subheading font-weight-regular">
-          For help and collaboration with other Vuetify developers,
-          <br>please join our online
-          <a href="https://community.vuetifyjs.com" target="_blank">Discord Community</a>
-        </p>
+      <v-flex v-for="i in 3" :key="`4${i}`" xs4>
+        <v-card dark color="primary">
+          <v-card-text class="px-0">4</v-card-text>
+        </v-card>
       </v-flex>
-
-      <v-flex
-        mb-5
-        xs12
-      >
-        <h2 class="headline font-weight-bold mb-3">What's next?</h2>
-
-        <v-layout justify-center>
-          <a
-            v-for="(next, i) in whatsNext"
-            :key="i"
-            :href="next.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ next.text }}
-          </a>
-        </v-layout>
+      <v-flex v-for="i in 4" :key="`3${i}`" xs3>
+        <v-card dark color="secondary">
+          <v-card-text class="px-0">3</v-card-text>
+        </v-card>
       </v-flex>
-
-      <v-flex
-        xs12
-        mb-5
-      >
-        <h2 class="headline font-weight-bold mb-3">Important Links</h2>
-
-        <v-layout justify-center>
-          <a
-            v-for="(link, i) in importantLinks"
-            :key="i"
-            :href="link.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ link.text }}
-          </a>
-        </v-layout>
+      <v-flex v-for="i in 6" :key="`2${i}`" xs2>
+        <v-card dark color="primary">
+          <v-card-text class="px-0">2</v-card-text>
+        </v-card>
       </v-flex>
-
-      <v-flex
-        xs12
-        mb-5
-      >
-        <h2 class="headline font-weight-bold mb-3">Ecosystem</h2>
-
-        <v-layout justify-center>
-          <a
-            v-for="(eco, i) in ecosystem"
-            :key="i"
-            :href="eco.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ eco.text }}
-          </a>
-        </v-layout>
+      <v-flex v-for="i in 12" :key="`1${i}`" xs1>
+        <v-card dark color="secondary">
+          <v-card-text class="px-0">1</v-card-text>
+        </v-card>
       </v-flex>
     </v-layout>
   </v-container>

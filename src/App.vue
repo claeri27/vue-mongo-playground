@@ -1,18 +1,21 @@
 <template>
-  <v-app>
+  <v-app dark>
     <v-toolbar app>
       <v-toolbar-title class="headline text-uppercase">
-        <span>Vuetify</span>
-        <span class="font-weight-light">MATERIAL DESIGN</span>
+        <span class="font-weight-light">Crypto</span>
+        <span>FLEX</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn
         flat
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
         target="_blank"
       >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>open_in_new</v-icon>
+        <span>Login</span>
+      </v-btn>
+      <v-btn
+        flat
+      >
+        <span>Register</span>
       </v-btn>
     </v-toolbar>
 
@@ -37,3 +40,6 @@ export default {
   }
 }
 </script>
+
+<style>
+</style>

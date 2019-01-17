@@ -23,3 +23,11 @@ koa-router	/Users/chris/my-apps/vue-mongo-playground/server/package.json	/^    "
 koa-session	/Users/chris/my-apps/vue-mongo-playground/server/package.json	/^    "koa-session": "^5.10.1",$/;"	function	line:25
 mongoose	/Users/chris/my-apps/vue-mongo-playground/server/package.json	/^    "mongoose": "^5.4.4"$/;"	function	line:26
 devDependencies	/Users/chris/my-apps/vue-mongo-playground/server/package.json	/^  "devDependencies": {$/;"	function	line:28
+vue-mongo-playground	/Users/chris/my-apps/vue-mongo-playground/README.md	/^# vue-mongo-playground$/;"	function	line:1
+Project setup	/Users/chris/my-apps/vue-mongo-playground/README.md	/^## Project setup$/;"	function	line:3
+Compiles and hot-reloads for development	/Users/chris/my-apps/vue-mongo-playground/README.md	/^### Compiles and hot-reloads for development$/;"	function	line:8
+Compiles and minifies for production	/Users/chris/my-apps/vue-mongo-playground/README.md	/^### Compiles and minifies for production$/;"	function	line:13
+Run your tests	/Users/chris/my-apps/vue-mongo-playground/README.md	/^### Run your tests$/;"	function	line:18
+Lints and fixes files	/Users/chris/my-apps/vue-mongo-playground/README.md	/^### Lints and fixes files$/;"	function	line:23
+Run your unit tests	/Users/chris/my-apps/vue-mongo-playground/README.md	/^### Run your unit tests$/;"	function	line:28
+Customize configuration	/Users/chris/my-apps/vue-mongo-playground/README.md	/^### Customize configuration$/;"	function	line:33

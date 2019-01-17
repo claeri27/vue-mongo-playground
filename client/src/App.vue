@@ -6,7 +6,7 @@
         <span>VEXX</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-menu offset-y left>
+      <v-menu offset-y left transition="slide-x-transition">
         <v-btn
           slot="activator"
           color="primary"
@@ -24,10 +24,10 @@
           </v-list-tile>
         </v-list>
       </v-menu>
-      <v-menu offset-y left>
+      <v-menu offset-y left transition="slide-x-transition">
         <v-btn
           slot="activator"
-          color="primary"
+          color="error"
           dark
         >
           Register
@@ -65,11 +65,11 @@ export default {
   data () {
     return {
       items: [
-          { title: 'Google' },
-          { title: 'Click Me' },
-          { title: 'Click Me' },
-          { title: 'Click Me 2' }
-        ]
+        { title: 'Google' },
+        { title: 'Click Me' },
+        { title: 'Click Me' },
+        { title: 'Click Me 2' }
+      ]
     }
   }
 }

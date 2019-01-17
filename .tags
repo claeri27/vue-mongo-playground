@@ -1,2 +1,25 @@
-requiresRole	/Users/chris/my-apps/vue-mongo-playground/server/src/api/auth/service.js	/^  requiresRole: function (roles) {$/;"	function	line:38
-encryptPassword	/Users/chris/my-apps/vue-mongo-playground/server/src/api/user/user.model.js	/^userSchema.pre('save', async function encryptPassword () {$/;"	function	line:34
+name	/Users/chris/my-apps/vue-mongo-playground/server/package.json	/^  "name": "crypto-flex-server",$/;"	function	line:2
+version	/Users/chris/my-apps/vue-mongo-playground/server/package.json	/^  "version": "1.0.0",$/;"	function	line:3
+description	/Users/chris/my-apps/vue-mongo-playground/server/package.json	/^  "description": "CryptoFlex Server",$/;"	function	line:4
+main	/Users/chris/my-apps/vue-mongo-playground/server/package.json	/^  "main": "src\/entry.js",$/;"	function	line:5
+author	/Users/chris/my-apps/vue-mongo-playground/server/package.json	/^  "author": "Christopher Laeri",$/;"	function	line:6
+license	/Users/chris/my-apps/vue-mongo-playground/server/package.json	/^  "license": "ISC",$/;"	function	line:7
+scripts	/Users/chris/my-apps/vue-mongo-playground/server/package.json	/^  "scripts": {$/;"	function	line:8
+eslint	/Users/chris/my-apps/vue-mongo-playground/server/package.json	/^    "eslint": ".\/node_modules\/.bin\/eslint src\/",$/;"	function	line:9
+eslint-fix	/Users/chris/my-apps/vue-mongo-playground/server/package.json	/^    "eslint-fix": ".\/node_modules\/.bin\/eslint src\/ --fix",$/;"	function	line:10
+start	/Users/chris/my-apps/vue-mongo-playground/server/package.json	/^    "start": "NODE_ENV=development nodemon src\/entry.js",$/;"	function	line:11
+build	/Users/chris/my-apps/vue-mongo-playground/server/package.json	/^    "build": "NODE_ENV=production nodemon src\/entry.js"$/;"	function	line:12
+dependencies	/Users/chris/my-apps/vue-mongo-playground/server/package.json	/^  "dependencies": {$/;"	function	line:14
+@koa/cors	/Users/chris/my-apps/vue-mongo-playground/server/package.json	/^    "@koa\/cors": "^2.2.3",$/;"	function	line:15
+bcrypt	/Users/chris/my-apps/vue-mongo-playground/server/package.json	/^    "bcrypt": "^3.0.3",$/;"	function	line:16
+dotenv	/Users/chris/my-apps/vue-mongo-playground/server/package.json	/^    "dotenv": "^6.2.0",$/;"	function	line:17
+jsonwebtoken	/Users/chris/my-apps/vue-mongo-playground/server/package.json	/^    "jsonwebtoken": "^8.4.0",$/;"	function	line:18
+koa	/Users/chris/my-apps/vue-mongo-playground/server/package.json	/^    "koa": "^2.6.2",$/;"	function	line:19
+koa-bodyparser	/Users/chris/my-apps/vue-mongo-playground/server/package.json	/^    "koa-bodyparser": "^4.2.1",$/;"	function	line:20
+koa-compose	/Users/chris/my-apps/vue-mongo-playground/server/package.json	/^    "koa-compose": "^4.1.0",$/;"	function	line:21
+koa-convert	/Users/chris/my-apps/vue-mongo-playground/server/package.json	/^    "koa-convert": "^1.2.0",$/;"	function	line:22
+koa-lusca	/Users/chris/my-apps/vue-mongo-playground/server/package.json	/^    "koa-lusca": "^2.2.0",$/;"	function	line:23
+koa-router	/Users/chris/my-apps/vue-mongo-playground/server/package.json	/^    "koa-router": "^7.4.0",$/;"	function	line:24
+koa-session	/Users/chris/my-apps/vue-mongo-playground/server/package.json	/^    "koa-session": "^5.10.1",$/;"	function	line:25
+mongoose	/Users/chris/my-apps/vue-mongo-playground/server/package.json	/^    "mongoose": "^5.4.4"$/;"	function	line:26
+devDependencies	/Users/chris/my-apps/vue-mongo-playground/server/package.json	/^  "devDependencies": {$/;"	function	line:28

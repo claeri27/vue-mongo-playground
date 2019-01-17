@@ -1,0 +1,33 @@
+{
+  "name": "crypto-flex-server",
+  "version": "1.0.0",
+  "description": "CryptoFlex Server",
+  "main": "src/entry.js",
+  "author": "Christopher Laeri",
+  "license": "ISC",
+  "scripts": {
+    "eslint": "./node_modules/.bin/eslint src/",
+    "eslint-fix": "./node_modules/.bin/eslint src/ --fix",
+    "start": "NODE_ENV=development nodemon src/entry.js",
+    "build": "NODE_ENV=production nodemon src/entry.js"
+  },
+  "dependencies": {
+    "@koa/cors": "^2.2.3",
+    "bcrypt": "^3.0.3",
+    "dotenv": "^6.2.0",
+    "jsonwebtoken": "^8.4.0",
+    "koa": "^2.6.2",
+    "koa-bodyparser": "^4.2.1",
+    "koa-compose": "^4.1.0",
+    "koa-convert": "^1.2.0",
+    "koa-lusca": "^2.2.0",
+    "koa-router": "^7.4.0",
+    "koa-session": "^5.10.1",
+    "mongoose": "^5.4.4"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.12.0",
+    "nodemon": "^1.18.9"
+  }
+}

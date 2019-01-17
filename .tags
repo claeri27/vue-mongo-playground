@@ -1,0 +1,2 @@
+requiresRole	/Users/chris/my-apps/vue-mongo-playground/server/src/api/auth/service.js	/^  requiresRole: function (roles) {$/;"	function	line:38
+encryptPassword	/Users/chris/my-apps/vue-mongo-playground/server/src/api/user/user.model.js	/^userSchema.pre('save', async function encryptPassword () {$/;"	function	line:34

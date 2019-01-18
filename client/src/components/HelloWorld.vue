@@ -72,6 +72,15 @@ export default {
     items: [
       {
         src: 'https://cryptocurrencynews.com/wp-content/uploads/sites/3/2017/12/Depositphotos_159283418_m-2015-e1513363517587.jpg'
+      },
+      {
+        src: 'https://i.pinimg.com/originals/31/e1/ef/31e1ef90a4ea2c5b74e101ade24e4127.png'
+      },
+      {
+        src: 'https://partners.adobe.com/content/dam/tep_assets/images/tech_home_hero_banner1.jpg'
+      },
+      {
+        src: 'https://cn.novumind.com/wp-content/uploads/2018/06/abstract-tech-banner-lower-res.jpeg'
       }
     ],
     headers: [

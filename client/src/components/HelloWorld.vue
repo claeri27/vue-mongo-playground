@@ -10,8 +10,26 @@
               :src="item.src"
             ></v-carousel-item>
           </v-carousel>
+        </v-card>
+        <v-data-table
+          :headers="headers"
+          :items="desserts"
+          class="elevation-1"
+        >
+          <template slot="items" slot-scope="props">
+            <td>{{ props.item.name }}</td>
+            <td class="text-xs-right">{{ props.item.calories }}</td>
+            <td class="text-xs-right">{{ props.item.fat }}</td>
+            <td class="text-xs-right">{{ props.item.carbs }}</td>
+            <td class="text-xs-right">{{ props.item.protein }}</td>
+            <td class="text-xs-right">{{ props.item.iron }}</td>
+          </template>
+        </v-data-table>
+      </v-flex>
+      <v-flex v-for="i in 2" :key="`6${i}`" xs6>
+        <v-card dark color="primary">
           <v-data-table
-            :headers="headers"
+            :headers="headers2"
             :items="desserts"
             class="elevation-1"
           >
@@ -24,18 +42,6 @@
               <td class="text-xs-right">{{ props.item.iron }}</td>
             </template>
           </v-data-table>
-          <v-card-text class="px-0">12</v-card-text>
-          <v-card-text class="px-0">12</v-card-text>
-          <v-card-text class="px-0">12</v-card-text>
-          <v-card-text class="px-0">12</v-card-text>
-          <v-card-text class="px-0">12</v-card-text>
-          <v-card-text class="px-0">12</v-card-text>
-          <v-card-text class="px-0">12</v-card-text>
-          <v-card-text class="px-0">12</v-card-text>
-        </v-card>
-      </v-flex>
-      <v-flex v-for="i in 2" :key="`6${i}`" xs6>
-        <v-card dark color="secondary">
           <v-card-text class="px-0">6</v-card-text>
           <v-card-text class="px-0">6</v-card-text>
           <v-card-text class="px-0">6</v-card-text>
@@ -45,21 +51,10 @@
       <v-flex v-for="i in 3" :key="`4${i}`" xs4>
         <v-card dark color="primary">
           <v-card-text class="px-0">4</v-card-text>
-        </v-card>
-      </v-flex>
-      <v-flex v-for="i in 4" :key="`3${i}`" xs3>
-        <v-card dark color="secondary">
-          <v-card-text class="px-0">3</v-card-text>
-        </v-card>
-      </v-flex>
-      <v-flex v-for="i in 6" :key="`2${i}`" xs2>
-        <v-card dark color="primary">
-          <v-card-text class="px-0">2</v-card-text>
-        </v-card>
-      </v-flex>
-      <v-flex v-for="i in 12" :key="`1${i}`" xs1>
-        <v-card dark color="secondary">
-          <v-card-text class="px-0">1</v-card-text>
+          <v-card-text class="px-0">4</v-card-text>
+          <v-card-text class="px-0">4</v-card-text>
+          <v-card-text class="px-0">4</v-card-text>
+          <v-card-text class="px-0">4</v-card-text>
         </v-card>
       </v-flex>
     </v-layout>
@@ -102,6 +97,10 @@ export default {
       { text: '1hr', value: '1hr-change', align: 'center' },
       { text: '24hr', value: '24hr-change', align: 'center' },
       { text: '7d', value: '7d-change', align: 'center' }
+    ],
+    headers2: [
+      {text: 'Sym', value: 'symbol', align: 'left' },
+      {text: 'Volume', value: 'volume', align: 'right' }
     ],
     desserts: [
       {
